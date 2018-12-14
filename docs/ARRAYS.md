@@ -50,6 +50,7 @@ Keeping references intact.
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.splice(0, dinosaurs.length);
 ```
 
@@ -57,6 +58,7 @@ or
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.length = 0
 ```
 
@@ -64,6 +66,7 @@ dinosaurs.length = 0
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 let copy = dinosaurs.slice();
 // ['Triceratops', 'Diplodocus', 'Stegosaurus']
 ```
@@ -72,6 +75,7 @@ let copy = dinosaurs.slice();
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs[dinosaurs.length - 1];
 // 'Stegosaurus'
 ```
@@ -80,6 +84,7 @@ Or
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.slice(-1)[0];
 // 'Stegosaurus'
 ```
@@ -88,8 +93,10 @@ dinosaurs.slice(-1)[0];
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.shift();
 // 'Triceratops'
+
 dinosaurs;
 // ['Diplodocus', 'Stegosaurus']
 ```
@@ -98,8 +105,10 @@ dinosaurs;
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.pop();
 // 'Stegosaurus'
+
 dinosaurs;
 // ['Triceratops', 'Diplodocus'];
 ```
@@ -108,8 +117,10 @@ dinosaurs;
 
 ```javascript
 let dinosaurs = ['Diplodocus', 'Stegosaurus'];
+
 dinosaurs.unshift('Triceratops');
 // 3 - the array length
+
 dinosaurs;
 // ['Triceratops', 'Diplodocus', 'Stegosaurus']
 ```
@@ -118,6 +129,7 @@ dinosaurs;
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.push('Velociraptor');
 // 2
 dinosaurs;
@@ -128,6 +140,7 @@ dinosaurs;
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs[1] = 'Velociraptor';
 // ['Triceratops', 'Velociraptor', 'Stegosaurus'];
 ```
@@ -136,6 +149,7 @@ Or
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.splice(1, 1, 'Velociraptor');
 ```
 
@@ -143,6 +157,7 @@ dinosaurs.splice(1, 1, 'Velociraptor');
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.splice(1, 0, 'Velociraptor', 'Mosasaurus');
 // ['Triceratops', 'Velociraptor', 'Mosasaurus', 'Diplodocus', 'Stegosaurus']
 ```
@@ -151,8 +166,10 @@ dinosaurs.splice(1, 0, 'Velociraptor', 'Mosasaurus');
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.splice(1, 1);
 // ['Diplodocus']
+
 dinosaurs;
 // ['Triceratops', 'Stegosaurus']
 ```
@@ -161,8 +178,10 @@ dinosaurs;
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', ''];
+
 dinosaurs.splice(1, 2);
 // ['Diplodocus', 'Stegosaurus']
+
 dinosaurs;
 // ['Triceratops']
 ```
@@ -171,6 +190,7 @@ dinosaurs;
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.reverse();
 // ['Stegosaurus', 'Diplodocus', 'Triceratops'];
 ```
@@ -179,6 +199,7 @@ dinosaurs.reverse();
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.join(' AND ');
 // 'Triceratops AND Diplodocus AND Stegosaurus'
 ```
@@ -187,6 +208,7 @@ dinosaurs.join(' AND ');
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus', 'Velociraptor'];
+
 dinosaurs.sort();
 // ['Diplodocus', 'Stegosaurus', 'Triceratops', 'Velociraptor']
 ```
@@ -195,6 +217,7 @@ dinosaurs.sort();
 
 ```javascript
 let numbers = [1438,2605,794,3947,6241,11745,2585];
+
 numbers.sort(function(a, b) {
     return a - b;
 });
@@ -215,6 +238,7 @@ let allTheMeals = dayTimeMeals.concat(nightTimeMeals);
 
 ```javascript
 let meals = ['breakfast', 'lunch', 'dinner', 'supper'];
+
 nightTimeMeals = meals.slice(2,4);
 // ['dinner', 'supper']
 ```
@@ -306,6 +330,7 @@ dinosaurs.push('Brachiosaurus');
 
 ```javascript
 let dinosaurs = ['Triceratops', 'Diplodocus', 'Stegosaurus'];
+
 dinosaurs.indexOf('Stegosaurus');
 // 2
 ```
