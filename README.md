@@ -1,8 +1,8 @@
-# A collection of useful Javascript code snippets
+# A collection of useful JavaScript code snippets
 
 ## Arrays
 
-[Array cheatsheet](docs/arrays.md)
+[Array cheatsheet](docs/ARRAYS.md)
 
 ## Spread operator
 
